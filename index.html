@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>iinto</title>
+</head>
+<body>
+  <main class="main">
+    <section class="form-area">
+      <div class="container flex form-area-container">
+        <div class="logo-bg">
+          <a href="" class="logo-link">
+            <img src="img/logo.svg" alt="лого" class="logo-img">
+          </a>
+        </div>
+        <article class="form-article">
+          <div class="article-content">
+            <header class="article-header">
+              <h1 class="main-title">Get iinto it today</h1>
+              <p class="article-header-paragraph">There is no charge or obligation upon registration.</p>
+            </header>
+            <div class="buttons">
+              <button class="btn-reset btn fb-btn">Register with Facebook</button>
+              <button class="btn-reset btn in-btn">Register with LinkedIn</button>
+            </div>
+            <div class="splitter flex">
+              <p class="splitter-text flex">OR</p>
+            </div>
+            <form action="" method="post" class="form">
+              <fieldset class="text-input-fieldset flex">
+                <div class="flex text-input-area">
+                  <label for="email" class="text-input-label">Email</label>
+                  <input type="email" name="email" id="email" required class="text-input">
+                </div>
+                <div class="flex text-input-area">
+                  <label for="phone" class="text-input-label">Phone</label>
+                  <input type="tel" name="phone" id="phone" required class="text-input">
+                </div>
+              </fieldset>
+              <h2 class="radio-fieldset-title">What type of investor are you?</h2>
+              <fieldset class="radio-input-fieldset">
+                <legend class="radio-input-fieldset-legend">
+                  Select the type of investor you are below
+                </legend>
+                <input type="radio" name="investor-type" id="individual" value="Individual"  class="radio-input" checked>
+                <label for="individual" class="radio-label">Individual</label>
+                <input type="radio" name="investor-type" id="business" value="Business" class="radio-input">
+                <label for="business" class="radio-label">Business</label>
+                <input type="radio" name="investor-type" id="ira" value="IRA" class="radio-input">
+                <label for="ira" class="radio-label">IRA</label>
+                <input type="radio" name="investor-type" id="trust" value="Trust" class="radio-input">
+                <label for="trust" class="radio-label">Trust</label>
+              </fieldset>
+              <p class="descr">I am a natural person investing on my own behalf as a sole owner, joint tenant, or tenant in common</p>
+              <input type="checkbox" name="agree" id="agree" value="agree" required class="agreement-input">
+              <label for="agree" class="agreement">I agree to the terms and receiving notifications from iinto <a href="#" class="terms-link">View full terms</a></label>
+              <button type="submit" class="btn-reset btn submit-btn">Create Account</button>
+            </form>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

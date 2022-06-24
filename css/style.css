@@ -1,0 +1,304 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+@font-face {
+  font-family: "Barlow";
+  src: local("Barlow-Regular"),
+    url("../fonts/Barlow-Regular.woff2") format("woff2"),
+    url("../fonts/Barlow-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: "Barlow", Arial, Helvetica, sans-serif;
+  font-size: 0;
+  color: #2A4A5C;
+  background-color: #EFF6FF;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+input {
+  outline: none;
+}
+
+/* global */
+
+.container {
+  width: 1400px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.main {
+  padding: 90px 0;
+}
+
+.btn-reset {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+}
+
+.btn {
+  padding: 10px 50px;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  background-position: 10px center;
+}
+
+/* form-area */
+
+.form-area-container {
+  box-shadow: 0 0 30px rgba(0,0,0,0.08);
+}
+
+/* ----left side---- */
+
+.logo-bg {
+  height: 1000px;
+  width: 759px;
+  background: url(../img/bg.jpg) no-repeat;
+  padding-top: 45px;
+  padding-left: 60px;
+}
+
+.logo-img {
+  height: 30px;
+}
+
+/* ----right side---- */
+
+.form-article {
+  padding-top: 115px;
+  padding-left: 50px;
+  width: 641px;
+}
+
+.article-content {
+  width: 538px;
+}
+
+/* header */
+
+.main-title {
+  margin-bottom: 20px;
+  font-size: 32px;
+  font-weight: 400;
+  color: black;
+}
+
+.article-header-paragraph {
+  margin-bottom: 60px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.article-header {
+  margin-bottom: 60px;
+}
+
+/* buttons */
+
+.buttons {
+  margin-bottom: 50px;
+}
+
+.fb-btn {
+  background-color: #255A9B;
+  background-image: url(../img/facebook.svg);
+  margin-right: 30px;
+}
+
+.in-btn {
+  background-color: #0076B6;
+  background-image: url(../img/linkedin.svg);
+  background-position: 15px;
+}
+
+/* splitter */
+
+.splitter {
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.splitter-text {
+  align-items: center;
+  font-size: 16px;
+  font-weight: 400;
+  color: black;
+}
+
+.splitter-text::before {
+  content: "";
+  height: 1px;
+  width: 100px;
+  border-top: 1px solid #eee;
+  margin-right: 5px;
+}
+
+.splitter-text::after {
+  content: "";
+  height: 1px;
+  width: 100px;
+  border-top: 1px solid #eee;
+  margin-left: 5px;
+}
+
+/* ----form---- */
+
+/* email + phone */
+
+.text-input-fieldset {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 60px;
+}
+
+.text-input-area {
+  position: relative;
+  flex-direction: column;
+}
+
+.text-input-area:first-child {
+  margin-right: 30px;
+}
+
+.text-input {
+  height: 55px;
+  width: 254px;
+  padding: 0;
+  padding-top: 17px;
+  padding-left: 7px;
+  border: 1px solid #eee ;
+  z-index: 500;
+}
+
+.text-input:focus {
+  border-left: 2px solid #3698FB;
+}
+
+.text-input-label {
+  position: absolute;
+  font-size: 14px;
+  left: 7px;
+  top: 4px;
+  color: #7B8A92;
+  z-index: 1000;
+}
+
+/* radio */
+
+.radio-fieldset-title{
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.radio-input-fieldset {
+  margin-bottom: 30px;
+}
+
+.radio-input-fieldset-legend {
+  font-size: 16px;
+  margin-bottom: 40px;
+  color: #7B8A92;
+}
+
+input[type=radio] {
+  cursor: pointer;
+}
+
+.radio-label {
+  margin-left: 10px;
+  font-size: 16px;
+  color: black;
+}
+
+.radio-label:hover {
+  cursor: pointer;
+}
+
+.radio-label:not(:last-child) {
+  margin-right: 55px;
+}
+
+.descr {
+  width: 275px;
+  padding: 10px;
+  margin-bottom: 40px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #AFAFAF;
+  box-shadow: 0 0 30px rgba(0,0,0,0.08);
+}
+
+/* agreement + submit button */
+
+.agreement {
+  margin-left: 10px;
+  font-size: 16px;
+  color: #7B8A92;
+}
+
+.agreement:hover {
+  cursor: pointer;
+}
+
+.agreement-input {
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+
+.terms-link {
+  color: #3698FB;
+  text-decoration: underline;
+}
+
+.submit-btn {
+  width: 257px;
+  border-radius: 3px;
+  background: #3698FB;
+}
